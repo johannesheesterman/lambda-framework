@@ -15,6 +15,7 @@ class JavaScriptScriptEngine(ScriptEngine):
 
     def __execute_method__(self, filename:str, methodName:str, args: List[any]) -> any:
        with open(filename, "r") as source:
-            namespace = js2py.EvalJs({'python_sum': sum})  
+            namespace = js2py.EvalJs({})  
             namespace.execute(source.read())
             return namespace[methodName](*args)
+            
