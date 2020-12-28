@@ -1,3 +1,4 @@
+from LambdaInterpeter.ScriptEngines.JavaScriptScriptEngine.JavaScriptScriptEngine import JavaScriptScriptEngine
 from LambdaInterpeter.ScriptEngines.ScriptEngine import ScriptEngine
 import os
 from typing import List
@@ -42,4 +43,5 @@ class LambdaInterpeter(LambdaVisitor):
 
     def __load_script_engines(self) -> None:
         self.__script_engines.append(PythonScriptEngine(self.__script_paths, "py"))
+        self.__script_engines.append(JavaScriptScriptEngine(self.__script_paths, "js"))
 

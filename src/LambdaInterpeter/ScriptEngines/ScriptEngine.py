@@ -4,9 +4,8 @@ import abc
 
 class ScriptEngine():
 
-    __filename_by_methodname = {}
-
     def __init__(self, script_paths: List[str], fileExtension:str):
+        self.__filename_by_methodname = {}
         self.__script_paths = script_paths
         self.__file_extension = fileExtension
         self.__load_scripts()

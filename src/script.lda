@@ -1,4 +1,5 @@
 [quote totalprice] = 123
 [y] = sqrt(3)
 [z] = plus([y], 5)
+[a] = minus(5,2)
 [x] = [quote totalprice]
