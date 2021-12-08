@@ -6,7 +6,8 @@ A low coding framework
 
 ### Prerequisites
 * Python3
-* antlr4 python package
+* pip:
 ```
 pip install antlr4-python3-runtime
+pip install js2py
 ```
